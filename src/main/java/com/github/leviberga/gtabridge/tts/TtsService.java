@@ -1,4 +1,4 @@
-package com.github.leviberga.gtabridge.services;
+package com.github.leviberga.gtabridge.tts;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -9,6 +9,11 @@ import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+/**
+ * Talks to the local Kokoro-TTS server and writes the generated voice line
+ * straight into the GTA V scripts folder, where TwitchPhoneMod.cs picks it
+ * up.
+ */
 public class TtsService {
 
     private static final String API_KEY = "kokoro-local";
