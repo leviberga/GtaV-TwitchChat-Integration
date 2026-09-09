@@ -12,6 +12,9 @@ target/
 *.iml
 *.ipr
 
+### Variáveis de ambiente ###
+.env
+
 ### Eclipse ###
 .apt_generated
 .classpath
